@@ -8,3 +8,6 @@
 - Add in css properties in `style.css` to make index.html look so:
 
 ![end state](./goal.png)
+
+---
+Copyright (c) 2018 ThoughtWorks. For personal use and training purposes only; not to be copied or distributed without further approval.
