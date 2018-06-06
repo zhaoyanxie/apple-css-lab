@@ -1,0 +1,103 @@
+body {
+    font-family: Lucida Grande, sans-serif;
+    font-size: 16px;
+    color: #666666;
+    background-color: #F1F1F1;
+}
+
+a {
+    text-decoration: none;
+    color: #08C;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+}
+
+h3 {
+    color: black;
+}
+
+#banner, #why-love { 
+    border: 1px solid #AAAAAA;
+}
+
+#banner {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-image: url(./images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+}
+
+#banner div {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: right;
+}
+#banner h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+    margin: 0;
+    color: black;
+}
+#banner h2 {
+    margin: 0;
+}
+
+#why-love {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(./images/gradient.png);
+    background-size: cover;
+    padding: 20px;
+}
+#why-love div {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 20px;
+}
+
+#retina{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(./images/gradient.png);
+    background-size: cover;
+    border-left: 1px solid #AAAAAA;
+    border-right: 1px solid #AAAAAA;
+    padding: 20px;
+}
+#retina div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px;
+}
+
+#wrapper-specs {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: white;
+    border-left: 1px solid #AAAAAA;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+#specs {
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    background-color: white;
+    border-collapse: collapse;
+}
+#specs, #specs th, #specs td {
+    border: 1px solid #AAAAAA;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+}
