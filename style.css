@@ -4,100 +4,77 @@ body {
     color: #666666;
     background-color: #F1F1F1;
 }
-
+h3 {
+    color: black;
+}
 a {
     text-decoration: none;
     color: #08C;
 }
 
 #content {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-}
-
-h3 {
-    color: black;
-}
-
-#banner, #why-love { 
-    border: 1px solid #AAAAAA;
+    width: 980px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: white;
+    text-align: right;
+    border: 1px solid #aaa;
 }
 
 #banner {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-image: url(./images/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 620px;
-}
-
-#banner div {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    text-align: right;
+    min-height: 677px;
+    margin: 50px 30px 0 0;
 }
 #banner h1 {
     font-size: 4.5em;
     font-weight: 900;
-    margin: 0;
     color: black;
 }
-#banner h2 {
-    margin: 0;
+#banner h1, #banner h2 {
+    margin: 0 50px 0 0;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    border-top: 1px solid rgb(177, 177, 177);
 }
 
 #why-love {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background: url(./images/gradient.png);
     background-size: cover;
-    padding: 20px;
+}
+#why-love div, #retina div {
+    text-align: left;
 }
 #why-love div {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding: 20px;
+    padding-left: 30px;
 }
-
 #retina{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    columns: 1fr 1fr;
     background: url(./images/gradient.png);
     background-size: cover;
-    border-left: 1px solid #AAAAAA;
-    border-right: 1px solid #AAAAAA;
-    padding: 20px;
 }
 #retina div {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding: 20px;
-}
-
-#wrapper-specs {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    background-color: white;
-    border-left: 1px solid #AAAAAA;
-    border-right: 1px solid #AAAAAA;
-    border-bottom: 1px solid #AAAAAA;
+    padding-right: 30px;
 }
 
 #specs {
-    /* grid-column-start: 2;
-    grid-column-end: 4; */
     background-color: white;
     border-collapse: collapse;
 }
 #specs, #specs th, #specs td {
     border: 1px solid #AAAAAA;
     padding: 20px;
-    margin: 0 20px 20px 20px;
+    margin: 0 30px 30px 30px;
+} 
+#specs th, #specs tr td {
+    text-align: left;
+}
+#specs thead td {
+    text-align: center;
 }
